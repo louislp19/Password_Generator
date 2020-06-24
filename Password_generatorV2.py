@@ -149,7 +149,7 @@ lbl_characters.pack()
 ent_characters = tk.Entry(fg="blue", width = 10)
 ent_characters.pack()
 
-btn_characters_submit = tk.Button(text="submit", background = "green", fg = "blue",command = nb_characters)
+btn_characters_submit = tk.Button(text="submit", fg = "blue",command = nb_characters)
 btn_characters_submit.pack()
 
 c1 = tk.Checkbutton(window, text='Upper Cases',variable=l_state, onvalue=1, offvalue=0)
@@ -161,7 +161,7 @@ c2.pack()
 c3 = tk.Checkbutton(window, text='Symbols',variable=s_state, onvalue=1, offvalue=0)
 c3.pack()
 
-btn_submit = tk.Button(text="submit", background = "green", fg = "blue",command = print_result)
+btn_submit = tk.Button(text="submit", fg = "blue",command = print_result)
 btn_submit.pack()
 
 lbl_result = tk.Label(text = "",fg = "black")
