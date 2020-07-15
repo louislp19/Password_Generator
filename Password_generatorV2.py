@@ -3,13 +3,9 @@ import tkinter as tk
 import random as r
 
 
-
-
 password = []
 window = tk.Tk()
 window.title("Password Generator")
-
-
 
 
 # ------------------------------------------- Functions --------------------------------------
@@ -28,7 +24,7 @@ def nb_characters():
 
 def lower_cases_only():
     password.clear()
-    for i in range(nb_char):
+    for _ in range(nb_char):
         lower_cases = chr(r.randint(97, 122))
         password.append(lower_cases)
     
@@ -36,7 +32,7 @@ def lower_cases_only():
 
 def upper_cases():
     password.clear()
-    for i in range(nb_char):
+    for _ in range(nb_char):
         upper_cases = chr(r.randint(65, 90))
         lower_cases = chr(r.randint(97, 122))
         password.append(upper_cases)
@@ -46,7 +42,7 @@ def upper_cases():
     
 def lower_cases_numbers():
     password.clear()
-    for i in range(nb_char):
+    for _ in range(nb_char):
         numbers = chr(r.randint(48, 57))
         lower_cases = chr(r.randint(97, 122))
         password.append(numbers)
@@ -56,7 +52,7 @@ def lower_cases_numbers():
 
 def lower_cases_symbols():
     password.clear()
-    for i in range(nb_char):
+    for _ in range(nb_char):
         symbols = chr(r.randint(33, 64))
         lower_cases = chr(r.randint(97, 122))
         password.append(symbols)
@@ -66,7 +62,7 @@ def lower_cases_symbols():
 
 def upper_cases_numbers():
     password.clear()
-    for i in range(nb_char):
+    for _ in range(nb_char):
         upper_cases = chr(r.randint(65, 90))
         lower_cases = chr(r.randint(97, 122))
         numbers = chr(r.randint(48, 57))
@@ -78,7 +74,7 @@ def upper_cases_numbers():
 
 def upper_cases_symbols():
     password.clear()
-    for i in range(nb_char):
+    for _ in range(nb_char):
         upper_cases = chr(r.randint(65, 90))
         lower_cases = chr(r.randint(97, 122))
         symbols = chr(r.randint(33, 64))
@@ -90,7 +86,7 @@ def upper_cases_symbols():
 
 def all_characters():
     password.clear()
-    for i in range(nb_char):
+    for _ in range(nb_char):
         upper_cases = chr(r.randint(65, 90))
         lower_cases = chr(r.randint(97, 122))
         symbols = chr(r.randint(33, 64))
